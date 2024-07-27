@@ -11,6 +11,13 @@
 		FB501EDF2C4169D000645541 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB501EDE2C4169D000645541 /* ContentView.swift */; };
 		FB501EE12C4169D100645541 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB501EE02C4169D100645541 /* Assets.xcassets */; };
 		FB501EE42C4169D100645541 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB501EE32C4169D100645541 /* Preview Assets.xcassets */; };
+		FB501EED2C416A4000645541 /* HotKey in Frameworks */ = {isa = PBXBuildFile; productRef = FB501EEC2C416A4000645541 /* HotKey */; };
+		FB7437DA2C52897600D8A0F5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7437D92C52897600D8A0F5 /* AppDelegate.swift */; };
+		FB7437DC2C528BCC00D8A0F5 /* NoPermisionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7437DB2C528BCC00D8A0F5 /* NoPermisionView.swift */; };
+		FB7437DE2C528BFD00D8A0F5 /* CPHeaderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB7437DD2C528BFD00D8A0F5 /* CPHeaderView.swift */; };
+		FB86B7C22C4FF50600C0C397 /* CPUtils.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86B7C12C4FF50600C0C397 /* CPUtils.swift */; };
+		FB86B7C42C4FF64500C0C397 /* CPBlurryBackgroundView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86B7C32C4FF64500C0C397 /* CPBlurryBackgroundView.swift */; };
+		FB86B7C72C4FF6FB00C0C397 /* CopyableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = FB86B7C62C4FF6FB00C0C397 /* CopyableItem.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +27,12 @@
 		FB501EE02C4169D100645541 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB501EE32C4169D100645541 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		FB501EE52C4169D100645541 /* CPMemory.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = CPMemory.entitlements; sourceTree = "<group>"; };
+		FB7437D92C52897600D8A0F5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FB7437DB2C528BCC00D8A0F5 /* NoPermisionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NoPermisionView.swift; sourceTree = "<group>"; };
+		FB7437DD2C528BFD00D8A0F5 /* CPHeaderView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPHeaderView.swift; sourceTree = "<group>"; };
+		FB86B7C12C4FF50600C0C397 /* CPUtils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPUtils.swift; sourceTree = "<group>"; };
+		FB86B7C32C4FF64500C0C397 /* CPBlurryBackgroundView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CPBlurryBackgroundView.swift; sourceTree = "<group>"; };
+		FB86B7C62C4FF6FB00C0C397 /* CopyableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CopyableItem.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -27,6 +40,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB501EED2C416A4000645541 /* HotKey in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,8 +66,11 @@
 		FB501EDB2C4169D000645541 /* CPMemory */ = {
 			isa = PBXGroup;
 			children = (
+				FB86B7C82C4FF74300C0C397 /* Utils */,
+				FB86B7C52C4FF6E200C0C397 /* Views */,
 				FB501EDC2C4169D000645541 /* CPMemoryApp.swift */,
 				FB501EDE2C4169D000645541 /* ContentView.swift */,
+				FB7437D92C52897600D8A0F5 /* AppDelegate.swift */,
 				FB501EE02C4169D100645541 /* Assets.xcassets */,
 				FB501EE52C4169D100645541 /* CPMemory.entitlements */,
 				FB501EE22C4169D100645541 /* Preview Content */,
@@ -67,6 +84,25 @@
 				FB501EE32C4169D100645541 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		FB86B7C52C4FF6E200C0C397 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				FB86B7C32C4FF64500C0C397 /* CPBlurryBackgroundView.swift */,
+				FB86B7C62C4FF6FB00C0C397 /* CopyableItem.swift */,
+				FB7437DB2C528BCC00D8A0F5 /* NoPermisionView.swift */,
+				FB7437DD2C528BFD00D8A0F5 /* CPHeaderView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		FB86B7C82C4FF74300C0C397 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				FB86B7C12C4FF50600C0C397 /* CPUtils.swift */,
+			);
+			path = Utils;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -85,6 +121,9 @@
 			dependencies = (
 			);
 			name = CPMemory;
+			packageProductDependencies = (
+				FB501EEC2C416A4000645541 /* HotKey */,
+			);
 			productName = CPMemory;
 			productReference = FB501ED92C4169D000645541 /* CPMemory.app */;
 			productType = "com.apple.product-type.application";
@@ -113,6 +152,9 @@
 				Base,
 			);
 			mainGroup = FB501ED02C4169CF00645541;
+			packageReferences = (
+				FB501EEB2C416A4000645541 /* XCRemoteSwiftPackageReference "HotKey" */,
+			);
 			productRefGroup = FB501EDA2C4169D000645541 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -139,8 +181,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB7437DA2C52897600D8A0F5 /* AppDelegate.swift in Sources */,
 				FB501EDF2C4169D000645541 /* ContentView.swift in Sources */,
+				FB86B7C72C4FF6FB00C0C397 /* CopyableItem.swift in Sources */,
+				FB86B7C42C4FF64500C0C397 /* CPBlurryBackgroundView.swift in Sources */,
+				FB7437DE2C528BFD00D8A0F5 /* CPHeaderView.swift in Sources */,
 				FB501EDD2C4169D000645541 /* CPMemoryApp.swift in Sources */,
+				FB86B7C22C4FF50600C0C397 /* CPUtils.swift in Sources */,
+				FB7437DC2C528BCC00D8A0F5 /* NoPermisionView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,6 +327,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -306,6 +355,7 @@
 				ENABLE_HARDENED_RUNTIME = YES;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
 				INFOPLIST_KEY_NSHumanReadableCopyright = "";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -341,6 +391,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		FB501EEB2C416A4000645541 /* XCRemoteSwiftPackageReference "HotKey" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/soffes/HotKey";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		FB501EEC2C416A4000645541 /* HotKey */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = FB501EEB2C416A4000645541 /* XCRemoteSwiftPackageReference "HotKey" */;
+			productName = HotKey;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = FB501ED12C4169CF00645541 /* Project object */;
 }

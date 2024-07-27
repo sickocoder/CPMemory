@@ -2,16 +2,16 @@
 //  CPMemoryApp.swift
 //  CPMemory
 //
-//  Created by A255085 on 12/07/24.
+//  Created by Sickocoder on 12/07/24.
 //
-
 import SwiftUI
 
 @main
-struct CPMemoryApp: App {
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-    }
+struct MenuBarApp_SwiftUIApp: App {
+	@NSApplicationDelegateAdaptor(AppDelegate.self) private var appDelegate
+	
+	var body: some Scene {
+		Settings {}
+	}
 }
+
